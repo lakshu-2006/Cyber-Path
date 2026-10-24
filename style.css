@@ -1,0 +1,112 @@
+*{
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(31, 28, 56);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+h1{
+    color: rgb(245, 49, 49);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+button{
+    background-color: rgb(243, 182, 238);
+    color: black;
+    padding: 12px 25px;
+    border: black;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#startBtn{
+    background-color: lightgreen;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 28px;
+    font-size: 17px;
+    font-weight:bold ;
+    cursor:pointer
+    
+}
+#startBtn:hover{
+    background:  lightgreen;
+    transform: scale(1.5);
+}
+.container{
+    width: 90%;
+    max-width: 650px;
+    margin: 25px auto;
+    text-align: center;
+}
+#quiz{
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 25px;
+    background: rgb(61, 61, 121) ;
+    border: 1px solid rgb(117, 240, 117);
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+
+}
+#question{
+    color: rgb(102, 234, 102);
+    font-size: 22px;
+    gap: 20px;
+}
+#answers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    gap: 12px;
+    margin-top: 20px;
+}
+#answers button{
+    width: 100%;
+    min-height: 50px;
+    padding:12px ;
+    background-color: #1c2d44;
+    color: white;
+    border: 1px solid blanchedalmond;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.5s;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+
+}
+#answers button:hover{
+    background-color: #00ff99;
+    color:#08111f ;
+}
+
+@media(max-width:600px){
+    h1{
+        font-size: 30px;
+    }
+    #quiz{
+        padding: 15px;
+        width: 100%;
+    }
+    #question{
+        font-size: 19px;
+    }
+    #answers button{max-width: 100%;
+
+    }
+    .container{
+        width: 95%;
+    }
+}
